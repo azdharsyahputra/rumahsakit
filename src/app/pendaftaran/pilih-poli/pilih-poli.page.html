@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="header">
+    <img src="assets/icon/logo.png" alt="logo" routerLink="/menu" style="cursor: pointer;">
+    <div class="header-title">
+      <p></p>
+      <p></p>
+    </div>
+    <div class="icon-header" style="margin-left: auto;">
+      <ion-icon name="person-circle-outline"></ion-icon>
+      <ion-icon
+        name="log-out-outline"
+        (click)="logoutConfirm()"
+        style="cursor: pointer;">
+      </ion-icon>
+    </div>
+  </div>
+  <div class="container">
+    <div class="form-daftar">
+      <h2>Daftar Poli</h2>
+
+      <label for="poli">Pilih Poli</label>
+      <select id="poli">
+        <option value="" disabled selected>Pilih poli</option>
+        <option value="umum">Poli Umum</option>
+        <option value="gigi">Poli Gigi</option>
+        <option value="anak">Poli Anak</option>
+        <option value="mata">Poli Mata</option>
+      </select>
+
+      <label for="tanggal">Tanggal Kunjungan</label>
+      <ion-datetime
+        presentation="date"
+        id="tanggal"
+        placeholder="Pilih tanggal"
+        class="styled-datetime">
+      </ion-datetime>
+
+      <label for="waktu">Waktu Kunjungan</label>
+      <select id="waktu">
+        <option value="" disabled selected>Waktu Kunjungan</option>
+        <option value="umum">08:00</option>
+        <option value="gigi">09:00</option>
+        <option value="anak">10:00</option>
+        <option value="mata">11:00</option>
+      </select>
+
+      <button class="btn-daftar" routerLink="/status-antrian">Daftar</button>
+    </div>
+  </div>
+</ion-content>

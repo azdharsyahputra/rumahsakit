@@ -1,0 +1,65 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="header">
+    <img src="assets/icon/logo.png" alt="logo" routerLink="/menu" style="cursor: pointer;">
+    <div class="header-title">
+      <p></p>
+      <p></p>
+    </div>
+    <div class="icon-header" style="margin-left: auto;">
+      <ion-icon name="person-circle-outline"></ion-icon>
+      <ion-icon
+        name="log-out-outline"
+        (click)="logoutConfirm()"
+        style="cursor: pointer;">
+      </ion-icon>
+    </div>
+  </div>
+  <div class="container">
+    <div class="card-grid">
+      <div class="card-item" routerLink="/pengguna">
+        <div class="card-box">
+          <img src="assets/icon/profile.png" alt="logo">
+        </div>
+        <p class="card-label">Profile</p>
+      </div>
+
+      <div class="card-item" routerLink="/pilih-poli">
+        <div class="card-box">
+          <img src="assets/icon/poli.png" alt="logo">
+        </div>
+        <p class="card-label">Daftar Poli</p>
+      </div>
+
+      <div class="card-item" routerLink="/status-antrian">
+        <div class="card-box">
+          <img src="assets/icon/status.png" alt="logo">
+        </div>
+        <p class="card-label">Status Antrian</p>
+      </div>
+
+      <div class="card-item" routerLink="/history">
+        <div class="card-box">
+          <img src="assets/icon/riwayat.png" alt="logo">
+        </div>
+        <p class="card-label">Riwayat Antrian</p>
+      </div>
+    </div>
+    <div class="footer-card">
+      © SEHATIN
+    </div>
+  </div>
+<ion-modal [isOpen]="showNotif" cssClass="centered-modal">
+  <ng-template>
+    <div class="notif-card">
+      <ion-icon name="notifications-outline" class="notif-icon"></ion-icon>
+      <h2 class="notif-title">Saatnya Masuk!</h2>
+      <p class="notif-message">Silakan masuk ke ruangan dokter sekarang untuk pemeriksaan.</p>
+      <ion-button expand="block" class="notif-btn" (click)="closeNotif()">Oke, Saya Masuk</ion-button>
+    </div>
+  </ng-template>
+</ion-modal>
+
+</ion-content>

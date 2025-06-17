@@ -1,0 +1,57 @@
+<ion-content [fullscreen]="true" class="login-bg">
+  <div class="login-container">
+    <h2><strong>Register</strong></h2>
+
+    <ion-item class="input-item">
+      <ion-label position="floating">NIK</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item class="input-item">
+      <ion-label position="floating">Nama Lengkap</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item class="input-item">
+      <ion-label position="floating">Tempat Lahir</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <label for="tanggal" style="color: black;">Tanggal Lahir</label>
+    <ion-datetime
+      presentation="date"
+      id="tanggal"
+      placeholder="Pilih tanggal"
+      class="styled-datetime">
+    </ion-datetime>
+
+    <ion-item class="input-item">
+      <ion-label position="floating">Jenis Kelamin</ion-label>
+      <ion-select interface="popover">
+        <ion-select-option value="L">Laki-laki</ion-select-option>
+        <ion-select-option value="P">Perempuan</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item class="input-item">
+      <ion-label position="floating">No HP</ion-label>
+      <ion-input type="tel"></ion-input>
+    </ion-item>
+
+    <ion-item class="input-item">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+
+    <ion-item class="input-item">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" class="btn-login">Daftar</ion-button>
+
+    <div class="register-text">
+      Sudah punya akun? <a href="#">Login sekarang</a>
+    </div>
+  </div>
+</ion-content>
