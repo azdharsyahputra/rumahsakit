@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="header">
+    <img src="assets/icon/logo.png" alt="logo" routerLink="/menu" style="cursor: pointer;">
+    <div class="header-title">
+      <p></p>
+      <p></p>
+    </div>
+    <div class="icon-header" style="margin-left: auto;">
+      <ion-icon name="person-circle-outline"></ion-icon>
+      <ion-icon
+        name="log-out-outline"
+        (click)="logoutConfirm()"
+        style="cursor: pointer;">
+      </ion-icon>
+    </div>
+  </div>
+  <div class="container">
+  <div class="profile-icon-wrapper">
+    <ion-icon name="person-circle-outline" class="profile-icon"></ion-icon>
+  </div>
+    <div class="profile-card">
+      <p></p>
+      <p>a</p>
+      <h2 class="profile-name">Budi Santoso</h2>
+      <p class="profile-sub">budiexample.com</p>
+
+      <div class="info-row">
+        <span class="label">NIK</span>
+        <span class="value">1231y2317231</span>
+      </div>
+      <div class="info-row">
+        <span class="label">Tempat Tanggal Lahir</span>
+        <span class="value">France, 10 Maret 1990</span>
+      </div>
+      <div class="info-row">
+        <span class="label">Jenis Kelamin</span>
+        <span class="value">Laki-laki</span>
+      </div>
+      <div class="info-row">
+        <span class="label">No HP</span>
+        <span class="value">0880088000</span>
+      </div>
+
+      <ion-button expand="block" color="primary">Edit Profil</ion-button>
+    </div>
+
+  </div>
+</ion-content>
