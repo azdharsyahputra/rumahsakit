@@ -41,8 +41,9 @@
         <span class="value">17 Juni 2025 09:00</span>
       </div>
     </div>
-
-
+    <div class="ion-text-center" style="margin-top: 30px;" *ngIf="qrData">
+      <qrcode [qrdata]="qrData" [width]="200" [errorCorrectionLevel]="'M'"></qrcode>
+    </div>
     <div class="footer-card">
       © SEHATIN
     </div>

@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   standalone: false,
 })
 export class StatusAntrianPage implements OnInit {
+  qrData: string = '1234567890';
 
 constructor(
   private alert: AlertService,
